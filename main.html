@@ -12,30 +12,78 @@
                 background: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0,0,0, 0.874)),url("https://i.imgur.com/aBHotcX.jpg");                                               
                 height:100%;
             }
-        #wn{
-            
+        #wn{            
             font : normal 300 40px/1 'Josefin Sans', sans-serif; 
-                color:rgb(0, 144, 228) !important;
-                
-        }
+            color:#5AB9E7 !important;                
+        }        
         #ab{
+            font-size:20px;
             color:white;
+        }        
+        #sp{
+            font : normal 300 33px/1 'Josefin Sans', sans-serif; 
+            color:white !important;  
         }
-        p{ color:white}
+        .stp{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            color:#5AB9E7 !important;                
+        }
+        .ssrc{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color:#5AB9E7 !important;                
+        }
+        .sbp{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            color:rgb(228, 228, 228) !important;                
+        }
+        #i1{
+            max-width: 200px;
+            max-height: 200px;
+        }
+        .developer {
+      line-height: 1.375em;
+      color: white;
+      font-weight: 300;
+      font-size:1.3em; 
+      margin-right: 40px;
+      text-align:right;
+  }
+  #d1{
+      display: block;
+  }
+  #d2{
+      display: block;
+  }
         </style>
     </head>
     <body>
-        <h1 id='wn'>Welcome to script importer</h1>
+        <div class="container-fluid">
+        <h1 id='wn'>Welcome to script importer for html/Javascript</h1>
         <div class='row'>
-            <div class='col-xs-3'>
+            <div id='d1' class='col-sm-3'>
+                <img class="img-responsive" id="i1" src="https://cdn2.iconfinder.com/data/icons/seo-web-optimization-ultimate-part1/512/code-512.png"></img>
                     <h2 id="ab">
-                            The above Script scrapes and selects one of the answers associated with the related Stackoverflow question. The loadScript function call eliminates the need for performing the typical cut-and-paste job in Javascript!
+                        <p id='stp' class='stp'>Steps</p>
+                        <p id='sbp' class='sbp'>Add a script tag inside head tag</p>
+                        <p id='ssrc' class='ssrc'>&lt;Script src="http://snipimp.herokuapp.com/loadScript.js"&gt;&lt;/script&gt;</p>                            
+                        <p id='sbp' class='sbp'>Call the function loadScript(url,no) inside the script tag of body for load script from stackoverflow answers</p>
+                        <p id='ssrc' class='ssrc'>loadScript('https://stackoverflow.com/questions/7944239/generating-fibonacci-sequence',4);</p>
+                        <p id='sbp' class='sbp'>Create a function for html click event. inside this function call the loaded function</p>
+                        <p id='ssrc' class='ssrc'>getFibonacciNumbers(20);</p>
                     </h2>                    
             </div>
-            <div class='col-xs-6'>
-                <p>Click the button for copy the script src<button onclick=''>Copy</button></p>
-            </div>
-        </div>
+            <div id='d2' class='col-sm-8'>
+                <br>
+                <p id='sp'>Sample usage</p>               
+                <img class="img-responsive" src='https://github.com/ManivasakamR/impScr/blob/master/u.png?raw=true'></img>  
+                <br>              <br>
+                <p class="developer">Developed By<a href="https://www.facebook.com/r.manivasakam" target="_blank" > Manivasakam R </a> </p>
         
+            </div>            
+        </div>
+    </div>
     </body>
 </html>
