@@ -2,7 +2,7 @@ function loadScript(url,no){
   var sArr=[];
   var fArr=[];
   var p=url.indexOf("questions")+10;
-  var q=url.lastIndexOf("/");
+  var q=p+8;
   var qno=url.substring(p,q);     
   $.ajax({    
         url:'https://api.stackexchange.com/2.2/questions/'+qno+'/answers?&site=stackoverflow&filter=withbody&answer=true',        
