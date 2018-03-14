@@ -1,4 +1,3 @@
-<script>
 function loadScript(url,no){
   var sArr=[];
   var fArr=[];
@@ -32,4 +31,3 @@ function loadScript(url,no){
             return res;  
   }  
 }  
-</script>
