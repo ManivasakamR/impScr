@@ -1,3 +1,7 @@
+
+
+//Author @ Manivasakam R KGiSL-IIM
+
 function loadScript(url,no){
   var sArr=[];
   var fArr=[];
