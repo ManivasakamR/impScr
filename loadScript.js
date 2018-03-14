@@ -28,10 +28,6 @@ function loadScript(url,no){
         }                        
     });
   function replaceSymbols(res){
-            res=res.replace('&lt;','<'); res=res.replace(' &lt;','<'); res=res.replace('&lt; ','<'); res=res.replace(' &lt; ','<');
-            res=res.replace('&gt;', '>'); res=res.replace(' &gt;', '>'); res=res.replace('&gt; ', '>'); res=res.replace(' &gt; ', '>');
-            res=res.replace('&amp;&amp;','&&'); res=res.replace(' &amp;&amp;','&&'); res=res.replace('&amp;&amp; ','&&'); res=res.replace(' &amp;&amp; ','&&');
-            res=res.replace('&amp;','&'); res=res.replace(' &amp;','&'); res=res.replace('&amp; ','&'); res=res.replace(' &amp; ','&');
-            return res;  
+    return res.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');            
   }  
 }  
